@@ -233,6 +233,8 @@ class MainWindow(QMainWindow):
             # If this signal is not from the current tab, ignore
             return
 
+        ## Security confirmation
+        
         if q.scheme() == 'https':
             # Secure padlock icon
             self.httpsicon.setPixmap(QPixmap(os.path.join('images', 'pLockSSL.png')))
